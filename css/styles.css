@@ -4002,7 +4002,7 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: #f4623a;
 }
 
@@ -7822,6 +7822,10 @@ textarea.form-control-lg {
 .bg-success {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-image {
+  --bs-bg-opacity: 1;
+  background-image: url("assets/img/amritamain.jpg") ;
 }
 
 .bg-info {
