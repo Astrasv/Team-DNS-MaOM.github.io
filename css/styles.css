@@ -600,11 +600,42 @@ progress {
 .blockquote-footer::before {
   content: "— ";
 }
+.img-fluidbase {
+  max-width: 100%;
+  height: auto;
+}
 
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
+
+.centered {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  height: 0;
+  line-height: 1;
+  clear: both; 
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+  .centered {
+    font-size:larger;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -11331,6 +11362,11 @@ hr.divider {
 
 hr.divider-light {
   background-color: #fff;
+}
+@media (max-width: 768px) {
+  hr.divider-shrink {
+    background-color: #fff;
+  }
 }
 
 #mainNav {
