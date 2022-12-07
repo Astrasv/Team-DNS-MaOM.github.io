@@ -11439,7 +11439,18 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  animation: shrink 5s infinite alternate;
 }
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
